@@ -32,6 +32,8 @@ To make use of the DKMS feature with this project, do the following:
 # dkms build -m ${DRV_NAME} -v ${DRV_VERSION}
 # dkms install -m ${DRV_NAME} -v ${DRV_VERSION}
 ```
+Or else use add.sh
+
 Whereby it is assumed you're in the cloned project directory and the current branch is `driver-4.3.14` (the default). If you want to use another driver version, adjust `DRV_VERSION` accordingly.
 
 If you later on want to remove it again, do the following:
@@ -40,3 +42,4 @@ If you later on want to remove it again, do the following:
 # DRV_VERSION=4.3.14
 # dkms remove ${DRV_NAME}/${DRV_VERSION} --all
 ```
+Otherwise use the remove.sh

@@ -1,0 +1,3 @@
+DRV_NAME=rtl8812AU
+DRV_VERSION=4.3.14
+dkms remove ${DRV_NAME}/${DRV_VERSION} --all
